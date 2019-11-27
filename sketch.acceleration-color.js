@@ -78,9 +78,10 @@ function onAccelerationData(data) {
 
   // console.log(x, y, z);
 
-  accelerationX = x * 90;
-  accelerationY = y * 90;
-  accelerationZ = z * 90;
+  // G's to m/s^2
+  accelerationX = x * 9.80665;
+  accelerationY = y * 9.80665;
+  accelerationZ = z * 9.80665;
 
   deviceMoved();
 }

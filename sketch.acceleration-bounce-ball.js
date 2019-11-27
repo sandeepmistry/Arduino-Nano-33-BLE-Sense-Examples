@@ -112,7 +112,8 @@ function onAccelerationData(data) {
 
   // console.log(x, y, z);
 
-  accelerationX = x * 9;
-  accelerationY = y * 9;
-  accelerationZ = z * 9;
+  // G's to m/s^2
+  accelerationX = x * 9.80665;
+  accelerationY = y * 9.80665;
+  accelerationZ = z * 9.80665;
 }

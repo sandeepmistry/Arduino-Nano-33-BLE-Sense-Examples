@@ -105,8 +105,9 @@ function onAccelerationData(data) {
 
   // console.log(x, y, z);
 
-  accelerationX = x * 5;
-  accelerationY = y * 5;
+  // G's to m/s^2
+  accelerationX = x * 9.80665;
+  accelerationY = y * 9.80665;
 }
 
 // Ball class
