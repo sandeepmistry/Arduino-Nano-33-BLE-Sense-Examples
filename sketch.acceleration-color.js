@@ -72,9 +72,9 @@ function onDisconnect() {
 function onAccelerationData(data) {
   const LITTLE_ENDIAN = true;
 
-  const x = event.target.value.getFloat32(0, LITTLE_ENDIAN);
-  const y = event.target.value.getFloat32(4, LITTLE_ENDIAN);
-  const z = event.target.value.getFloat32(8, LITTLE_ENDIAN);
+  const x = data.getFloat32(0, LITTLE_ENDIAN);
+  const y = data.getFloat32(4, LITTLE_ENDIAN);
+  const z = data.getFloat32(8, LITTLE_ENDIAN);
 
   // console.log(x, y, z);
 
