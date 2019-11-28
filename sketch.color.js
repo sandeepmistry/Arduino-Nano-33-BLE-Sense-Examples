@@ -46,8 +46,8 @@ function onConnect(error, characteristics) {
 
   for (c in characteristics) {
     const uuid = characteristics[c].uuid;
-console.log(uuid);
-    /*if (uuid === COLOR_UUID)*/ {
+
+    if (uuid === COLOR_UUID) {
       blePeripheral.startNotifications(characteristics[c], onColorData, 'custom');
     }
   }
